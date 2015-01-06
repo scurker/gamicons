@@ -9,7 +9,7 @@ module.exports = function(grunt) {
       ' * <%= pkg.description %>\n' +
       ' * Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n'+
       ' * <%= pkg.license %> license\n'+
-      ' */',
+      ' */\n\n',
 
     sprite: {
       gameicons: {
@@ -19,12 +19,22 @@ module.exports = function(grunt) {
         padding: 4,
         cssTemplate: 'templates/icons.mustache'
       }
+    },
+
+    concat: {
+      dist: {
+        src: ['gameicons.css'],
+        dest: 'gameicons.css',
+      },
+      options: {
+        banner: '<%= banner %>'
+      }
     }
 
   });
 
   require('matchdep').filterAll('grunt-*').forEach(grunt.loadNpmTasks);
 
-  grunt.registerTask('default', ['sprite']);
+  grunt.registerTask('default', ['sprite', 'concat']);
 
 };

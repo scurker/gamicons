@@ -1,3 +1,10 @@
+/*!
+ * gamicons - v1.0.0
+ * game system console icons
+ * Copyright (c) 2015 Jason Wilson
+ * mit license
+ */
+
 [class*=icon-]:before {
   display: inline-block;
   vertical-align: middle;
