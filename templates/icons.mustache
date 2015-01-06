@@ -1,0 +1,14 @@
+[class*=icon-]:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(gameicons.png);
+}
+
+{{#items}}
+.icon-{{name}}:before {
+  background-position: {{px.offset_x}} {{px.offset_y}};
+}
+{{/items}}
