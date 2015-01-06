@@ -4,8 +4,7 @@ gameicons is a game-inspired icon set originally created for [tivtrackr.com](tiv
 
 ## Icons
 
-![Sega Genesis](/icons/gen.png)     Sega Genesis
-![Sega Saturn](/icons/sat.png)      Sega Saturn
+![Sega Genesis](/icons/gen.png)     Sega Genesis![Sega Saturn](/icons/sat.png)      Sega Saturn
 ![Sega Dreamcast](/icons/dc.png)    Sega Dreamcast
 ![GameBoy](/icons/gb.png)           GameBoy
 ![GameBoy Color](/icons/gbc.png)    GameBoy Color
